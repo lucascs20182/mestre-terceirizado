@@ -1,0 +1,8 @@
+/* .cards #card3 img {
+    border: 3px solid black;
+} */
+
+.cards img {
+    height: 200px;
+    width: 200px;
+}
