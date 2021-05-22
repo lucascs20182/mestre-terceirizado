@@ -1,0 +1,64 @@
+main {
+    /* margin: 0 70px; */
+}
+
+#titulo {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+#titulo h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#descricao {
+    display: flex;
+    justify-content: center;
+}
+
+#descricao p {
+    max-width: 550px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.paragrafo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+} 
+
+.paragrafo p:first-child {
+    margin-right: 24px;
+}
+
+.paragrafo p:last-child {
+    margin-left: 24px;
+}
+
+.card {
+    width: 30rem;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 20rem;
+    }
+
+    main > div:nth-child(2) > div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    main > div:nth-child(2) > div:nth-child(3) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
