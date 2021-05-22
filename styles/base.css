@@ -1,3 +1,7 @@
+#temaDark input {
+    margin-top: 9px;
+}
+
 nav {
     font-size: 20px;    
 }
@@ -68,4 +72,12 @@ footer {
     nav li:first-child {
         margin-left: 70px;
     }
+}
+
+input[type=checkbox]:checked:before {
+    border: 2px solid #fff;
+}
+
+input[type=checkbox]:checked:after {
+    border: solid #fff;
 }
