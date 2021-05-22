@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/bootswatch-sketchy.min.css">
     <link rel="stylesheet" href="./styles/base.css">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/contato.css">
 </head>
 
 <body>
@@ -42,7 +42,7 @@
                             <a class="nav-link" href="./sobre.html">Sobre nós</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contato.html">Contato</a>
+                            <a class="nav-link" href="#">Contato</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -55,39 +55,40 @@
     </header>
 
     <main>
+        <div class="container">
+            <div id="titulo">
+                <h1>Nosso rastro na internet</h1>
+            </div>
 
-        <div id="titulo">
-            <h1>Mestre Terceirizado</h1>
-        </div>
+            <div class="formas-de-contato-1">
+                <div id="redes-sociais">
+                    <h2>Visite nossas principais redes sociais</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/lucas-cruz-a14881200/"
+                            target="_blank">Linkedin
+                        </a></li>
+                        
+                            <li><a href="https://github.com/lucascs20182" target="_blank">
+                            Github
+                        </a></li>
+                    </ul>
+                </div>
 
-        <div id="descricao">
-            <p>
-                Você e seus amigos querem viver uma aventura
-                mas ninguém quer ser o mestre?
-                Seus problemas foram resolvidos, alugue um!
-            </p>
-        </div>
-
-        <div class="cards">
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/mapa.jpg" class="card-img-top" alt="imagem de dados">
-                <div class="card-body">
-                    <p class="card-text">Centenas de universos disponíveis.</p>
+                <div id="enviar-email">
+                    <h2>Nos envie um e-mail</h2>
+                    <a href="mailto:lucascs20182@gmail.com" target="_blank">
+                        lucascs20182@gmail.com
+                    </a>
                 </div>
             </div>
 
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/dados.jpg" class="card-img-top" alt="imagem de uma caneca no formato de barril">
-                <div class="card-body">
-                    <p class="card-text">Kit com 196 dados.</p>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="./assets/caneca.jpg" class="card-img-top" alt="imagem de uma caneca no formato de barril" />
-                <div class="card-body">
-                    <p class="card-text">Agende sua própria história personalizada.</p>
-                </div>
+            <div class="formas-de-contato-2">
+                <h2>Fale com a gente pelo WhatsApp</h2>
+                <textarea id="mensagem-whatsapp" rows="10"></textarea>
+                <button type="button" class="btn btn-success"
+                    onclick="sendMessageToWhatsapp()">
+                    Clique para enviar mensagem
+                </button>
             </div>
         </div>
     </main>
@@ -100,6 +101,7 @@
     </div>
 
     <script src="./scripts/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/contato.js"></script>
 </body>
 
 </html>
