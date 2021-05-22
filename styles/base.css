@@ -37,7 +37,15 @@ nav {
 
 .card {
     border-radius: 25px;
+    /* background-color: #111111; */
+    /* margin: 1px solid #fff; */
 }
+
+/* 
+div.cards p {
+    color: #fff;
+} */
+
 
 footer {
     margin: 10px;
